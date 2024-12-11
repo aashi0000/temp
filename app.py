@@ -29,6 +29,12 @@ def save_base64_file(base64_str, filename):
     return file_path
 
 # Parse electricity bill
+@app.route("/", methods=["GET"])
+def standard_response():
+    return jsonify({"yo": "hello"}), 200
+        
+
+
 @app.route("/parse-electricity-bill", methods=["POST"])
 def parse_electricity_bill():
     try:
@@ -158,4 +164,5 @@ def predict_packaging_endpoint():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=5000) 
+    #https://web-production-ba46.up.railway.app/

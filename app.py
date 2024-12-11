@@ -164,5 +164,5 @@ def predict_packaging_endpoint():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000) 
+    app.run(debug=True) 
     #https://web-production-ba46.up.railway.app/
